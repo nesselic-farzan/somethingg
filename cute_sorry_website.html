@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Really Sorry 💗</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffd6e8, #ffeef7);
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #ff4d88;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 8px 0;
+        }
+
+        .heart {
+            font-size: 2em;
+            animation: beat 1s infinite;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff4d88;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #ff1f6b;
+            transform: scale(1.1);
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart">💖</div>
+        <h1>I'm Really, Really Sorry!</h1>
+        <p>Sorry sorry sorry sorry sorry 🥺</p>
+        <p>I'm super duper sorry 💕</p>
+        <p>So so so soooo sorry 😭</p>
+        <p>Please forgive me?</p>
+        <button onclick="alert('YAY!! Thank you for forgiving me!! 💖')">Forgive Me?</button>
+    </div>
+</body>
+</html>
